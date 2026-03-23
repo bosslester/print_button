@@ -1,12 +1,24 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { Router, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
+  standalone: true,
   imports: [RouterOutlet],
   templateUrl: './app.html',
-  styleUrl: './app.css'
 })
-export class App {
-  protected readonly title = signal('report_form');
+export class AppComponent {
+  constructor(private readonly router: Router) {}
+
+  openPermit(path: string) {
+    window.open(path, '_blank');
+  }
+
+  isPrintRoute(): boolean {
+    return [
+      '/print-permit',
+      '/dealer-permit',
+      '/retailer-permit',
+    ].includes(this.router.url);
+  }
 }

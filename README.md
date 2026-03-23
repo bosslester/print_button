@@ -2,6 +2,16 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.3.
 
+## Node.js version
+
+This workspace uses Angular 21, which requires Node.js `^20.19.0 || ^22.12.0 || >=24.0.0`.
+
+If you use `nvm`, run:
+
+```bash
+nvm use
+```
+
 ## Development server
 
 To start a local development server, run:
