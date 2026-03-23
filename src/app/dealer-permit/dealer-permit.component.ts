@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./dealer-permit.component.css']
 })
 export class DealerPermitComponent {
+
   print() {
     window.print();
   }

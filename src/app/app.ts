@@ -16,9 +16,9 @@ export class AppComponent {
 
   isPrintRoute(): boolean {
     return [
-      '/print-permit',
+      '/retailer-permit-print',
       '/dealer-permit',
-      '/retailer-permit',
+      '/service-center-permit',
     ].includes(this.router.url);
   }
 }

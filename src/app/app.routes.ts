@@ -1,10 +1,10 @@
 import { Routes } from '@angular/router';
-// import { DealerPermitComponent } from './dealer-permit/retailer-permit.component';
-import { PermitPrintComponent } from './permit-print/permit-print.component';
-import { RetailerPermitComponent } from './retailer-permit/retailer-permit.component';
+import { DealerPermitComponent } from './dealer-permit/dealer-permit.component';
+import { RetailerPermitComponent } from './retailer-permit-print/retailer-permit-print.component';
+import { ServiceCenterPermitComponent } from './service-center-permit/service-center-permit.component';
 
 export const routes: Routes = [
-  { path: 'print-permit', component: PermitPrintComponent },
-  // { path: 'dealer-permit', component: DealerPermitComponent },
-  { path: 'retailer-permit', component: RetailerPermitComponent },
+  { path: 'retailer-permit-print', component: RetailerPermitComponent },
+  { path: 'dealer-permit', component: DealerPermitComponent },
+  { path: 'service-center-permit', component: ServiceCenterPermitComponent },
 ];

@@ -140,7 +140,7 @@
 }
 
 .signature {
-  margin-top: 25px;
+  margin-top: 20px;
   text-align: right;
   line-height: 1;
 }
@@ -165,7 +165,7 @@
   justify-content: space-between;
   align-items: flex-start;
   margin-top: 20px;
-  gap: 10mm;
+  gap: 2mm;
 }
 
 .or-section {
@@ -212,6 +212,16 @@
   margin-left: 5px;
 }
 
+.or-left {
+  font-size: 10pt;
+  line-height: 1.3;
+}
+
+.or-left strong {
+  font-size: 10.5pt;
+  font-weight: bold;
+}
+
 /* Print optimization */
 @media print {
   .notes {
@@ -220,6 +230,10 @@
   
   .notes li {
     font-size: 8.5pt;
+  }
+
+  .or-left {
+    font-size: 9pt;
   }
 }
 

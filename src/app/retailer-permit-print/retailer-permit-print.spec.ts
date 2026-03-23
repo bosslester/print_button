@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PermitPrint } from './permit-print.component';
+import { RetailerPermitComponent } from './retailer-permit-print.component';
 
-describe('PermitPrint', () => {
-  let component: PermitPrint;
-  let fixture: ComponentFixture<PermitPrint>;
+describe('RetailerPermitComponent', () => {
+  let component: RetailerPermitComponent;
+  let fixture: ComponentFixture<RetailerPermitComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [PermitPrint],
+      imports: [RetailerPermitComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(PermitPrint);
+    fixture = TestBed.createComponent(RetailerPermitComponent);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });
