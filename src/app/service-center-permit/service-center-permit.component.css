@@ -180,12 +180,12 @@
 }
 
 .notes p {
-  margin: 0 0 8px 0;
-  font-size: 10pt;
+  margin: 0 0 5px 0;
+  font-size: 5pt;
 }
 
 .notes strong {
-  font-size: 10.5pt; /* Slightly larger for emphasis */
+  font-size: 7pt; /* Slightly larger for emphasis */
   font-weight: bold;
 }
 
@@ -195,7 +195,7 @@
 }
 
 .notes li {
-  font-size: 9.5pt; /* Smallest for list items */
+  font-size: 7pt; /* Smallest for list items */
   margin-bottom: 4px;
   text-align: justify;
 }

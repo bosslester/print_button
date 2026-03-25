@@ -19,6 +19,7 @@ export class AppComponent {
       '/retailer-permit-print',
       '/dealer-permit',
       '/service-center-permit',
+      '/ptpurchase',
     ].includes(this.router.url);
   }
 }
