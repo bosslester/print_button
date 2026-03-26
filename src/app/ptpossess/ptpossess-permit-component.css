@@ -74,7 +74,7 @@
 
 .applicant {
   text-align: center;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .print-button {
@@ -126,6 +126,37 @@
   line-height: 1.1;
 }
 
+
+/* address and units css */
+
+/* ===== INFO SECTION (ADDRESS STYLE) ===== */
+
+.info-section {
+  margin-top: 5px;
+  font-size: 12pt;
+}
+
+/* ROW */
+.info-row {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 4px;
+}
+
+/* LABEL */
+.info-row .label {
+  width: 45mm; /* fixed label width for alignment */
+  flex: 0 0 45mm;
+}
+
+/* VALUE WITH LONG LINE */
+.info-row .value {
+  flex: 1;
+  border-bottom: 1px solid black;
+  padding-left: 3mm;
+  min-height: 5mm;
+}
+
 .row {
   display: flex;
   justify-content: space-between;
@@ -169,6 +200,69 @@ td{
   margin-left: 40px;
 }
 
+.lower-section {
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+/* LINE STYLE (KEY PART) */
+.line-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.label {
+  width: 260px;
+}
+
+.value {
+  flex: 1;
+  border-bottom: 1px solid #000;
+  padding-left: 5px;
+}
+
+.value.strong {
+  font-weight: bold;
+}
+
+/* BOTTOM AREA */
+.bottom-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* RECEIPT */
+.receipt div {
+  margin-bottom: 4px;
+}
+
+.receipt span {
+  display: inline-block;
+  width: 120px;
+}
+
+/* SIGNATURE */
+.signature {
+  width: 300px;
+  text-align: center;
+}
+
+.signature-line {
+  border-bottom: 1px solid #000;
+  height: 40px;
+  margin: 10px 0 5px;
+}
+
+.signature .name {
+  font-weight: bold;
+  margin: 2px 0;
+}
+
+.signature .title {
+  font-size: 12px;
+}
 .row.full {
   display: block;
   justify-content: space-between;
@@ -376,4 +470,3 @@ td{
     page-break-inside: avoid;
   }
 }
-
