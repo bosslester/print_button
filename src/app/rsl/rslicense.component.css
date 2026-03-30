@@ -69,8 +69,10 @@
 
 /* TITLE */
 .title {
+  position: relative;
   text-align: center;
   margin-top: 0.14in;
+  padding-top: 0.16in;
 }
 
 .title h2 {
@@ -80,9 +82,12 @@
 }
 
 .license-info {
+  position: absolute;
+  top: 0;
+  right: 0;
   display: flex;
-  justify-content: space-between;
-  gap: 0.2in;
+  align-items: flex-end;
+  gap: 0.12in;
   font-size: 10.5pt;
 }
 
@@ -92,10 +97,18 @@
   text-align: justify;
 }
 
+.fill-in {
+  display: inline-block;
+  border-bottom: 1px solid #000;
+  padding: 0 0.04in 0.01in;
+}
+
 /* DETAILS */
 .details {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
   gap: 0.3in;
   margin-top: 0.2in;
 }
@@ -103,6 +116,11 @@
 .details .left,
 .details .right {
   flex: 1;
+  width: calc(50% - 0.15in);
+}
+
+.details .right {
+  text-align: left;
 }
 
 .details p {
@@ -128,6 +146,7 @@
 /* EQUIPMENT */
 .equipment {
   margin-top: 0.2in;
+  text-align: center;
 }
 
 .equipment h4 {
@@ -236,6 +255,12 @@
     flex-direction: column;
   }
 
+  .license-info {
+    position: static;
+    align-items: flex-start;
+    margin-top: 0.08in;
+  }
+
   .license-info .right {
     text-align: left;
   }
@@ -275,9 +300,22 @@
     border: 1px solid #000;
     box-shadow: none !important;
   }
+
+  .details {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: flex-start !important;
+  }
+
+  .details .left,
+  .details .right {
+    flex: 0 0 calc(50% - 0.15in) !important;
+    width: calc(50% - 0.15in) !important;
+  }
   
   @page {
-    size: Letter;
+    size: A4;
     margin: 0;
   }
 }
