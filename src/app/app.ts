@@ -20,7 +20,8 @@ export class AppComponent {
       '/dealer-permit',
       '/service-center-permit',
       '/ptpurchase',
-      '/ptpossess'
+      '/ptpossess',
+      '/rsl'
     ].includes(this.router.url);
   }
 }

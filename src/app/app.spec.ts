@@ -32,6 +32,7 @@ describe('App', () => {
       'Mobile Phone Dealers Permit',
       'Service Center Permit',
       'Permit to Purchase',
+      
     ]);
   });
 });

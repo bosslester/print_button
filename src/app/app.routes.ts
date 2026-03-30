@@ -4,11 +4,13 @@ import { RetailerPermitComponent } from './retailer-permit-print/retailer-permit
 import { ServiceCenterPermitComponent } from './service-center-permit/service-center-permit.component';
 import { PTPurchasePermitComponent } from './ptpurchase/ptpurchase-permit-component';
 import { PTPossessPermitComponent } from './ptpossess/ptpossess-permit-component';
+import { RslicenseComponent } from './rsl/rslicense.component';
 
 export const routes: Routes = [
   { path: 'retailer-permit-print', component: RetailerPermitComponent },
   { path: 'dealer-permit', component: DealerPermitComponent },
   { path: 'service-center-permit', component: ServiceCenterPermitComponent },
   { path: 'ptpurchase', component: PTPurchasePermitComponent },
-  { path: 'ptpossess', component: PTPossessPermitComponent }
+  { path: 'ptpossess', component: PTPossessPermitComponent },
+  { path: 'rsl', component: RslicenseComponent}
 ];
