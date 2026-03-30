@@ -301,6 +301,25 @@
     box-shadow: none !important;
   }
 
+  .title {
+    position: relative !important;
+    padding-top: 0.16in !important;
+  }
+
+  .license-info {
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    left: auto !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-end !important;
+    justify-content: flex-end !important;
+    text-align: right !important;
+    width: auto !important;
+    margin-top: 0 !important;
+  }
+
   .details {
     display: flex !important;
     flex-direction: row !important;
