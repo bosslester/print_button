@@ -21,7 +21,8 @@ export class AppComponent {
       '/service-center-permit',
       '/ptpurchase',
       '/ptpossess',
-      '/rsl'
+      '/rsl',
+      '/amateur'
     ].includes(this.router.url);
   }
 }
