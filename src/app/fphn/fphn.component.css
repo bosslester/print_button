@@ -1,5 +1,5 @@
 .toolbar {
-  width: 1100px;
+  width: 1400px;
   margin: 0 auto 16px;
 }
 
@@ -11,7 +11,7 @@
 }
 
 .page {
-  width: 1100px;
+  width: 1400px;
   margin: auto;
   font-family: Arial, sans-serif;
   font-size: 12px;
@@ -20,14 +20,14 @@
 /* TRIFOLD LAYOUT */
 .trifold {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 0.9fr 1fr 1fr 1fr;
   border: 1px solid #000;
 }
 
 /* PANELS */
 .panel {
   padding: 12px;
-  min-height: 500px;
+  min-height: 520px;
   position: relative;
 }
 
@@ -63,6 +63,7 @@
 /* CERTIFICATE */
 .certificate {
   text-align: center;
+  height: 100%;
 }
 
 .header {
@@ -132,10 +133,38 @@
   font-size: 18px;
 }
 
-/* PRINT */
-@media print {
+@media screen and (max-width: 1450px) {
+  .toolbar,
   .page {
     width: 100%;
+  }
+
+  .trifold {
+    overflow-x: auto;
+  }
+}
+
+/* PRINT */
+@media print {
+  @page {
+    size: landscape;
+    margin: 0;
+  }
+
+  .no-print,
+  .toolbar,
+  .print-button {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  .page {
+    width: 100%;
+    margin: 0;
+  }
+
+  .trifold {
+    grid-template-columns: 0.9fr 1fr 1fr 1fr;
   }
 
   .print-label,
@@ -158,4 +187,18 @@
   .serial {
     color: #000;
   }
+}
+
+.print-button {
+  border: 1px solid #1f2937;
+  background: #1f2937;
+  color: #fff;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+}
+
+.print-button:hover {
+  background: #111827;
 }

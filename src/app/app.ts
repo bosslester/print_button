@@ -6,6 +6,7 @@ import { Router, RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [RouterOutlet],
   templateUrl: './app.html',
+  styleUrl: './app.css',
 })
 export class AppComponent {
   constructor(private readonly router: Router) {}
@@ -22,7 +23,8 @@ export class AppComponent {
       '/ptpurchase',
       '/ptpossess',
       '/rsl',
-      '/amateur'
+      '/amateur',
+      '/fphn'
     ].includes(this.router.url);
   }
 }

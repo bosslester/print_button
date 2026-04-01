@@ -1,12 +1,14 @@
 @if (!isPrintRoute()) {
-  <button type="button" (click)="openPermit('/retailer-permit-print')"> Mobile Phone Retailers Permit</button>
-  <button type="button" (click)="openPermit('/dealer-permit')">Mobile Phone Dealers Permit</button>
-  <button type="button" (click)="openPermit('/service-center-permit')">Service Center Permit</button>
-  <button type="button" (click)="openPermit('/ptpurchase')">Permit to Purchase</button>
-  <button type="button" (click)="openPermit('/ptpossess')">Permit to Possess</button>
-  <button type="button" (click)="openPermit('/rsl')">Radio Station License</button>
-  <button type="button" (click)="openPermit('/amateur')">Amateur License</button>
-  <button type="button" (click)="openPermit('/fphn')">FPHN</button>
+  <div class="permit-menu no-print">
+    <button type="button" (click)="openPermit('/retailer-permit-print')"> Mobile Phone Retailers Permit</button>
+    <button type="button" (click)="openPermit('/dealer-permit')">Mobile Phone Dealers Permit</button>
+    <button type="button" (click)="openPermit('/service-center-permit')">Service Center Permit</button>
+    <button type="button" (click)="openPermit('/ptpurchase')">Permit to Purchase</button>
+    <button type="button" (click)="openPermit('/ptpossess')">Permit to Possess</button>
+    <button type="button" (click)="openPermit('/rsl')">Radio Station License</button>
+    <button type="button" (click)="openPermit('/amateur')">Amateur License</button>
+    <button type="button" (click)="openPermit('/fphn')">FPHN</button>
+  </div>
 }
 
 <router-outlet></router-outlet>
