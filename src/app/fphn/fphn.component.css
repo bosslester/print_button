@@ -1,0 +1,161 @@
+.toolbar {
+  width: 1100px;
+  margin: 0 auto 16px;
+}
+
+.print-button {
+  padding: 10px 18px;
+  border: 1px solid #000;
+  background: #fff;
+  cursor: pointer;
+}
+
+.page {
+  width: 1100px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+}
+
+/* TRIFOLD LAYOUT */
+.trifold {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 1px solid #000;
+}
+
+/* PANELS */
+.panel {
+  padding: 12px;
+  min-height: 500px;
+  position: relative;
+}
+
+/* FOLD LINES */
+.panel:not(:last-child) {
+  border-right: 1px dashed #999;
+}
+
+/* LEFT PANEL */
+.field {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #000;
+  margin-bottom: 8px;
+  padding-bottom: 2px;
+}
+
+.field span {
+  font-size: 11px;
+}
+
+.approval {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.approval .sign {
+  border-bottom: 1px solid #000;
+  height: 40px;
+  margin: 10px 0;
+}
+
+/* CERTIFICATE */
+.certificate {
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 50px;
+}
+
+.cert-title {
+  margin: 10px 0;
+  font-size: 12px;
+}
+
+/* ROWS */
+.row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #000;
+  margin: 5px 0;
+}
+
+.underline {
+  border-bottom: 1px solid #000;
+  width: 70%;
+  text-align: left;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  margin: 5px 0;
+}
+
+.grid div {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #000;
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 15px;
+}
+
+.footer .sign {
+  border-bottom: 1px solid #000;
+  height: 40px;
+  margin: 10px auto;
+  width: 150px;
+}
+
+/* SERIAL */
+.serial {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.serial span {
+  color: red;
+  font-size: 18px;
+}
+
+/* PRINT */
+@media print {
+  .page {
+    width: 100%;
+  }
+
+  .print-label,
+  .logo,
+  .sign {
+    visibility: hidden;
+  }
+
+  .field,
+  .row,
+  .grid div,
+  .underline,
+  .panel:not(:last-child) {
+    border-color: transparent;
+  }
+
+  .approval,
+  .certificate,
+  .footer,
+  .serial {
+    color: #000;
+  }
+}
