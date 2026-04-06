@@ -24,7 +24,8 @@ export class AppComponent {
       '/ptpossess',
       '/rsl',
       '/amateur',
-      '/fphn'
+      '/fphn',
+      '/sphn'
     ].includes(this.router.url);
   }
 }
