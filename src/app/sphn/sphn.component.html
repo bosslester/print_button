@@ -12,7 +12,7 @@
       <div class="field"><span class="print-label">DATE TAKEN</span><b>{{ data.testText }}</b></div>
       <div class="field"><span class="print-label">PLACE</span><b>{{ data.testText }}</b></div>
       <div class="field"><span class="print-label">RATING</span><b>{{ data.testText }}</b></div>
-      <div class="field"><span class="print-label">PAID UNDER OR NO.</span><b>{{ data.testText }}</b></div>
+      <div class="field"><span class="print-label">PAID UNDER O.R NO.</span><b>{{ data.testText }}</b></div>
       <div class="field"><span class="print-label">AMOUNT</span><b>{{ data.testText }}</b></div>
       <div class="field"><span class="print-label">DATE</span><b>{{ data.testText }}</b></div>
 
@@ -24,12 +24,11 @@
       </div>
     </div>
 
-    <!-- CENTER PANEL -->
+    <!-- CERTIFICATE PANELS -->
     <div class="panel cert-panel">
       <ng-container *ngTemplateOutlet="certificate"></ng-container>
     </div>
 
-    <!-- RIGHT PANEL -->
     <div class="panel cert-panel">
       <ng-container *ngTemplateOutlet="certificate"></ng-container>
     </div>
@@ -45,15 +44,16 @@
     <div class="certificate">
 
       <div class="header">
-        <img src="/ntc.png" class="logo">
+        <img src="/ntc.png" alt="logo" class="logo">
         <div class="title">
           <p class="print-label">Republic of the Philippines</p>
+          <p class="print-label">Department of Transportation</p>
           <h3 class="print-label">National Telecommunications Commission</h3>
-          <small class="print-label">Quezon City</small>
+          <small class="print-label">Metro Manila</small>
         </div>
       </div>
 
-      <h4 class="cert-title print-label">FIRST CLASS RADIOTELEPHONE OPERATOR'S CERTIFICATE</h4>
+      <h4 class="cert-title print-label">SECOND CLASS RADIOTELEPHONE OPERATOR'S CERTIFICATE</h4>
 
       <div class="row">
         <span class="print-label">Registration No.</span>
@@ -75,18 +75,18 @@
         <b class="underline">{{ data.testText }}</b>
       </div>
 
-      <div class="grid">
-        <div><span class="print-label">BIRTHDATE</span><b>{{ data.testText }}</b></div>
+      <div class="grid two-column">
+        <div><span class="print-label">BIRTHDATE (MO/DAY/YR)</span><b>{{ data.testText }}</b></div>
         <div><span class="print-label">CITIZENSHIP</span><b>{{ data.testText }}</b></div>
       </div>
 
-      <div class="grid">
+      <div class="grid three-column">
         <div><span class="print-label">SEX</span><b>{{ data.testText }}</b></div>
         <div><span class="print-label">HT (cm)</span><b>{{ data.testText }}</b></div>
         <div><span class="print-label">WT (kg)</span><b>{{ data.testText }}</b></div>
       </div>
 
-      <div class="grid">
+      <div class="grid two-column">
         <div><span class="print-label">DATE ISSUED</span><b>{{ data.testText }}</b></div>
         <div><span class="print-label">VALID UNTIL</span><b>{{ data.testText }}</b></div>
       </div>
