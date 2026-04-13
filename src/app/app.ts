@@ -25,7 +25,8 @@ export class AppComponent {
       '/rsl',
       '/amateur',
       '/fphn',
-      '/sphn'
+      '/sphn',
+      '/tphn'
     ].includes(this.router.url);
   }
 }

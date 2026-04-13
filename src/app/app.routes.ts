@@ -8,6 +8,7 @@ import { RslicenseComponent } from './rsl/rslicense.component';
 import { AmateurComponent } from './amateur/amateur.component';
 import { FphnComponent } from './fphn/fphn.component';
 import { SphnComponent } from './sphn/sphn.component';
+import { TphnComponent } from './tphn/tphn.component';
 
 export const routes: Routes = [
   { path: 'retailer-permit-print', component: RetailerPermitComponent },
@@ -18,5 +19,6 @@ export const routes: Routes = [
   { path: 'rsl', component: RslicenseComponent},
   { path: 'amateur', component: AmateurComponent },
   { path: 'fphn', component: FphnComponent },
-  { path: 'sphn', component: SphnComponent }
+  { path: 'sphn', component: SphnComponent },
+  { path: 'tphn', component: TphnComponent }
 ];
