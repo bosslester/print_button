@@ -42,7 +42,6 @@
   <!-- CERTIFICATE TEMPLATE -->
   <ng-template #certificate>
     <div class="certificate">
-
       <div class="header">
         <img src="/ntc.png" alt="logo" class="logo">
         <div class="title">
@@ -74,30 +73,25 @@
         <span class="print-label"></span>
         <b class="underline">{{ data.testText }}</b>
       </div>
-
       <div class="grid two-column">
         <div><span class="print-label">BIRTHDATE (MO/DAY/YR)</span><b>{{ data.testText }}</b></div>
         <div><span class="print-label">CITIZENSHIP</span><b>{{ data.testText }}</b></div>
       </div>
-
       <div class="grid three-column">
         <div><span class="print-label">SEX</span><b>{{ data.testText }}</b></div>
         <div><span class="print-label">HT (cm)</span><b>{{ data.testText }}</b></div>
         <div><span class="print-label">WT (kg)</span><b>{{ data.testText }}</b></div>
       </div>
-
       <div class="grid two-column">
         <div><span class="print-label">DATE ISSUED</span><b>{{ data.testText }}</b></div>
         <div><span class="print-label">VALID UNTIL</span><b>{{ data.testText }}</b></div>
       </div>
-
       <div class="footer">
         <p class="print-label">FOR THE COMMISSION:</p>
         <div class="sign"></div>
         <p><b>{{ data.testText }}</b></p>
         <p>{{ data.testText }}</p>
       </div>
-
       <div class="serial"><span class="print-label">SN- </span><span>{{ data.testText }}</span></div>
 
     </div>
