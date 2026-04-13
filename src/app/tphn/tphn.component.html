@@ -40,19 +40,25 @@
   </div>
 
   <!-- CERTIFICATE TEMPLATE -->
-  <ng-template #certificate>
-    <div class="certificate">
-      <div class="header">
-        <img src="/ntc.png" alt="logo" class="logo">
-        <div class="title">
-          <p class="print-label">Republic of the Philippines</p>
-          <p class="print-label">Department of Transportation</p>
-          <h3 class="print-label">National Telecommunications Commission</h3>
-          <small class="print-label">Metro Manila</small>
-        </div>
-      </div>
+ <ng-template #certificate>
+  <div class="certificate">
 
-      <h4 class="cert-title print-label">THIRD CLASS RADIOTELEPHONE OPERATOR'S CERTIFICATE</h4>
+    <div class="header">
+      <img src="/ntc.png" alt="logo" class="logo">
+
+      <div class="title">
+        <p>Republic of the Philippines</p>
+        <p>Department of Transportation</p>
+        <p>and Communications</p>
+        <h4>National Telecommunications Commission</h4>
+        <small>Metro Manila</small>
+      </div>
+    </div>
+
+    <div class="cert-title">
+      THIRD CLASS RADIOTELEPHONE OPERATOR'S CERTIFICATE
+    </div>
+
 
       <div class="row">
         <span class="print-label">Registration No.</span>
@@ -74,7 +80,7 @@
         <b class="underline">{{ data.testText }}</b>
       </div>
       <div class="grid two-column">
-        <div><span class="print-label">BIRTHDATE (MO/DAY/YR)</span><b>{{ data.testText }}</b></div>
+        <div><span class="print-label">BIRTHDATE (MO/DAY/YR)</span><b class="birthdate-value">{{ data.testText }}</b></div>
         <div><span class="print-label">CITIZENSHIP</span><b>{{ data.testText }}</b></div>
       </div>
       <div class="grid three-column">
@@ -89,8 +95,7 @@
       <div class="footer">
         <p class="print-label">FOR THE COMMISSION:</p>
         <div class="sign"></div>
-        <p><b>{{ data.testText }}</b></p>
-        <p>{{ data.testText }}</p>
+        <p class="signatory"><b>{{ data.testText }}</b></p>
       </div>
       <div class="serial"><span class="print-label">SN- </span><span>{{ data.testText }}</span></div>
 

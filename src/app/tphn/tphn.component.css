@@ -26,7 +26,7 @@
 
 .trifold {
   display: grid;
-  grid-template-columns: 0.9fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   border: 1px solid #000;
 }
 
@@ -34,6 +34,7 @@
   padding: 12px;
   min-height: 520px;
   position: relative;
+  box-sizing: border-box;
 }
 
 .panel:not(:last-child) {
@@ -63,20 +64,57 @@
   margin: 10px 0;
 }
 
+/* Limit size like the real card */
 .certificate {
-  text-align: center;
-  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 10px;
+  font-family: "Times New Roman", serif;
 }
 
+/* Header layout */
 .header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  position: relative;
+  text-align: center;
 }
 
+/* Logo */
 .logo {
-  width: 50px;
+  position: absolute;
+  left: 0;
+  width: 45px;   /* smaller like original */
+}
+
+/* Text block */
+.title {
+  line-height: 1.1;   /* tighter spacing */
+}
+
+/* Text styles */
+.title p {
+  margin: 0;
+  font-size: 10px;
+}
+
+.title h4 {
+  margin: 2px 0;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.title small {
+  font-size: 10px;
+}
+
+/* Certificate title */
+.cert-title {
+  margin-top: 6px;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
 }
 
 .title p,
@@ -116,6 +154,10 @@
   border-bottom: 1px solid #000;
 }
 
+.birthdate-value {
+  margin-left: 8px;
+}
+
 .two-column {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -133,6 +175,11 @@
   height: 40px;
   margin: 10px auto;
   width: 150px;
+}
+
+.footer .signatory {
+  margin: 4px 0;
+  text-align: center;
 }
 
 .serial {
@@ -175,7 +222,7 @@
   }
 
   .trifold {
-    grid-template-columns: 0.9fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .print-label,
