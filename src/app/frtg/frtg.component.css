@@ -210,7 +210,9 @@
 
   .no-print,
   .toolbar,
-  .print-button {
+  .print-button,
+  .header,
+  .cert-title {
     display: none !important;
     visibility: hidden !important;
   }
