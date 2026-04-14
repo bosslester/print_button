@@ -26,7 +26,8 @@ export class AppComponent {
       '/amateur',
       '/fphn',
       '/sphn',
-      '/tphn'
+      '/tphn',
+      '/frtg'
     ].includes(this.router.url);
   }
 }

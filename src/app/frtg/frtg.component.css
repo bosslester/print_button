@@ -1,0 +1,175 @@
+/* --- Core Layout --- */
+:host {
+  display: block;
+  font-family: Arial, sans-serif;
+  font-size: 11px; /* Standard size for forms */
+}
+
+.page {
+  width: 297mm; /* A4 Landscape width */
+  margin: 0 auto;
+  background: white;
+  padding: 10mm;
+  box-sizing: border-box;
+}
+
+.trifold {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 panels total */
+  gap: 15px;
+  align-items: start;
+}
+
+/* --- Panel Styling --- */
+.panel {
+  padding: 10px;
+  border: 1px dashed #ccc; /* Visual guide for folding */
+  min-height: 180mm;
+}
+
+.left-panel {
+  border-right: 2px solid #000;
+}
+
+.field {
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+/* --- Certificate Template Styling --- */
+.certificate {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.title {
+  flex: 1;
+}
+
+.title p {
+  margin: 0;
+  font-size: 9px;
+  text-transform: uppercase;
+}
+
+.title h4 {
+  margin: 2px 0;
+  font-size: 12px;
+}
+
+.cert-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 13px;
+  margin: 15px 0;
+  text-decoration: underline;
+}
+
+/* --- Form Grids & Rows --- */
+.row {
+  display: flex;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #000;
+}
+
+.grid {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.two-column { grid-template-columns: 1fr 1fr; }
+.three-column { grid-template-columns: 1fr 1fr 1fr; }
+
+.print-label {
+  font-size: 9px;
+  color: #555;
+  margin-right: 5px;
+  text-transform: uppercase;
+}
+
+.underline {
+  flex: 1;
+  border-bottom: 1px solid #000;
+  padding-left: 5px;
+}
+
+/* --- Signatures & Footer --- */
+.approval, .footer {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.sign {
+  height: 40px;
+  border-bottom: 1px solid #000;
+  width: 80%;
+  margin: 0 auto 5px;
+}
+
+.serial {
+  margin-top: auto;
+  text-align: right;
+  font-weight: bold;
+  color: red;
+}
+
+/* --- Print Settings --- */
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: 5mm;
+    border: none;
+  }
+
+  .panel {
+    border: none; /* Remove dashed lines for final print */
+  }
+
+  /* Ensure colors and backgrounds render */
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+
+/* Toolbar button styling */
+.toolbar {
+  padding: 10px;
+  background: #f4f4f4;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.print-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}

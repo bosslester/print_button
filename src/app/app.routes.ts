@@ -9,6 +9,7 @@ import { AmateurComponent } from './amateur/amateur.component';
 import { FphnComponent } from './fphn/fphn.component';
 import { SphnComponent } from './sphn/sphn.component';
 import { TphnComponent } from './tphn/tphn.component';
+import { FRTGComponent } from './frtg/frtg.component';
 
 export const routes: Routes = [
   { path: 'retailer-permit-print', component: RetailerPermitComponent },
@@ -20,5 +21,6 @@ export const routes: Routes = [
   { path: 'amateur', component: AmateurComponent },
   { path: 'fphn', component: FphnComponent },
   { path: 'sphn', component: SphnComponent },
-  { path: 'tphn', component: TphnComponent }
+  { path: 'tphn', component: TphnComponent },
+  { path: 'frtg', component: FRTGComponent }
 ];
