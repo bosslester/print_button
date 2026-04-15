@@ -31,15 +31,24 @@
 
     <!-- LEFT -->
     <div class="left">
-      <p><strong>LICENSEE:</strong> <b>*data from database*</b></p>
-      <p><strong>CALL-SIGN:</strong> <b>*data from database*</b></p>
-      <p><strong>CLASS:</strong> <b>*data from database*</b></p>
+      <p class="field-line">
+        <strong>LICENSEE:</strong>
+        <input type="text" [(ngModel)]="formData.licensee" name="licensee" class="inline-input" placeholder="Enter licensee">
+      </p>
+      <p class="field-line">
+        <strong>CALL-SIGN:</strong>
+        <input type="text" [(ngModel)]="formData.callSign" name="callSign" class="inline-input" placeholder="Enter call sign">
+      </p>
+      <p class="field-line">
+        <strong>CLASS:</strong>
+        <input type="text" [(ngModel)]="formData.licenseClass" name="licenseClass" class="inline-input" placeholder="Enter class">
+      </p>
 
       <div class="equipment">
         <p><strong>AUTHORIZED EQUIPMENT:</strong></p>
         <div class="equip-box">
-          <span><b>*data from database*</b></span>
-          <span><b>*data from database*</b></span>
+          <input type="text" [(ngModel)]="formData.equipmentOne" name="equipmentOne" class="box-input" placeholder="Equipment 1">
+          <input type="text" [(ngModel)]="formData.equipmentTwo" name="equipmentTwo" class="box-input" placeholder="Equipment 2">
         </div>
       </div>
     </div>
@@ -47,10 +56,10 @@
     <!-- RIGHT -->
     <div class="right">
       <p><strong>ADDRESS:</strong></p>
-      <p><b>*data from database*</b></p>
+      <textarea [(ngModel)]="formData.address" name="address" class="block-input" rows="2" placeholder="Enter address"></textarea>
 
       <p><strong>STATION LOCATION:</strong></p>
-      <p><b>*data from database*</b></p>
+      <textarea [(ngModel)]="formData.stationLocation" name="stationLocation" class="block-input" rows="2" placeholder="Enter station location"></textarea>
 
       <div class="signature">
         <p>SIGNATURE OF LICENSEE</p>
@@ -62,19 +71,37 @@
   <!-- VALIDITY -->
   <div class="validity">
     <p><strong>PERIOD OF VALIDITY</strong></p>
-    <p>VALID UNTIL: <b>*data from database*</b></p>
+    <p class="field-line">
+      <strong>VALID UNTIL:</strong>
+      <input type="text" [(ngModel)]="formData.validUntil" name="validUntil" class="inline-input" placeholder="Enter validity date">
+    </p>
   </div>
 
   <!-- ISSUED -->
   <div class="issued">
     <div class="left">
-      <p><strong>ISSUED ON:</strong> <b>*data from database*</b></p>
+      <p class="field-line">
+        <strong>ISSUED ON:</strong>
+        <input type="text" [(ngModel)]="formData.issuedOn" name="issuedOn" class="inline-input" placeholder="Enter issue date">
+      </p>
 
       <div class="receipt-box">
-        <p>Official Receipt: <b>*data from database*</b></p>
-        <p>Amount: <b>*data from database*</b></p>
-        <p>Date Paid: <b>*data from database*</b></p>
-        <p>Cashier: <b>*data from database*</b></p>
+        <p class="field-line">
+          <span>Official Receipt:</span>
+          <input type="text" [(ngModel)]="formData.officialReceipt" name="officialReceipt" class="inline-input" placeholder="Receipt no.">
+        </p>
+        <p class="field-line">
+          <span>Amount:</span>
+          <input type="text" [(ngModel)]="formData.amount" name="amount" class="inline-input" placeholder="Amount">
+        </p>
+        <p class="field-line">
+          <span>Date Paid:</span>
+          <input type="text" [(ngModel)]="formData.datePaid" name="datePaid" class="inline-input" placeholder="Date paid">
+        </p>
+        <p class="field-line">
+          <span>Cashier:</span>
+          <input type="text" [(ngModel)]="formData.cashier" name="cashier" class="inline-input" placeholder="Cashier">
+        </p>
       </div>
     </div>
 
@@ -88,8 +115,8 @@
 
   <!-- FOOTER -->
   <div class="footer">
-    <p><b>*data from database*</b></p>
-    <p><b>*data from database*</b></p>
+    <input type="text" [(ngModel)]="formData.footerLineOne" name="footerLineOne" class="footer-input" placeholder="Footer line 1">
+    <input type="text" [(ngModel)]="formData.footerLineTwo" name="footerLineTwo" class="footer-input" placeholder="Footer line 2">
   </div>
 
 </div>
