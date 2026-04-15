@@ -74,8 +74,11 @@
   <!-- VALIDITY -->
   <div class="validity">
     <p class="field-line">
-      <strong>PERIOD OF VALIDITY <u>VALID UNTIL:</u></strong>
-      <input type="text" [(ngModel)]="formData.validUntil" name="validUntil" class="inline-input" placeholder="Enter validity date">
+      <strong>PERIOD OF VALIDITY</strong>
+      <span class="valid-until-group">
+        <span class="valid-until-label">VALID UNTIL:</span>
+        <input type="text" [(ngModel)]="formData.validUntil" name="validUntil" class="inline-input valid-until-input" placeholder="Enter validity date">
+      </span>
     </p>
   </div>
 

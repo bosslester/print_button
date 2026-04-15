@@ -29,6 +29,27 @@ p {
   gap: 8px;
 }
 
+.valid-until-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #000;
+  justify-content: center;
+  align-items: center;
+}
+
+.valid-until-label {
+  white-space: nowrap;
+  text-align: center;
+  display: inline-block;
+  margin-left: 150px;
+}
+
+.valid-until-input {
+  min-width: 28mm;
+}
+
 .compact-field {
   flex: 1;
   min-width: 0;
