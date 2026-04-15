@@ -26,6 +26,8 @@ export class AmateurComponent {
     cashier: '',
     signatoryLineone: '',
     signatoryLinetwo: '',
+    ntcNumberOne: '',
+    ntcNumberTwo: '',
     footerLineOne: '',
     footerLineTwo: ''
   };

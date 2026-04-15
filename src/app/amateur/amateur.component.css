@@ -243,6 +243,25 @@ p {
   margin-top: 4px;
 }
 
+.ntc-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.ntc-input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  border-bottom: 1px solid #000;
+  background: transparent;
+  font: inherit;
+  color: #000;
+  outline: none;
+  padding: 0 0 2px;
+}
+
 /* FOOTER */
 .footer {
   display: flex;

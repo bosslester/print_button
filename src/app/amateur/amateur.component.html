@@ -112,7 +112,11 @@
       <p>By Authority of the Commissioner:</p>
       <input type="text" [(ngModel)]="formData.signatoryLineone" name="signatoryLineone" class="signatory-input signatory-lineone" placeholder="Enter Reginal Director's name">
       <input type="text" [(ngModel)]="formData.signatoryLinetwo" name="signatoryLinetwo" class="signatory-input signatory-linetwo" placeholder="Enter Position">
-      <p>NTC No.</p>
+      <div class="ntc-row">
+        <span>NTC No.</span>
+        <input type="text" [(ngModel)]="formData.ntcNumberOne" name="ntcNumberOne" class="ntc-input" placeholder="Input 1">
+        <input type="text" [(ngModel)]="formData.ntcNumberTwo" name="ntcNumberTwo" class="ntc-input" placeholder="Input 2">
+      </div>
     </div>
   </div>
 
