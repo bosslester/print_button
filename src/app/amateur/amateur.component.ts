@@ -15,6 +15,7 @@ export class AmateurComponent {
     licenseClass: '',
     equipmentOne: '',
     equipmentTwo: '',
+    equipmentThree: '',
     address: '',
     stationLocation: '',
     validUntil: '',
@@ -23,6 +24,8 @@ export class AmateurComponent {
     amount: '',
     datePaid: '',
     cashier: '',
+    signatoryLineone: '',
+    signatoryLinetwo: '',
     footerLineOne: '',
     footerLineTwo: ''
   };

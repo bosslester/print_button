@@ -24,6 +24,16 @@ p {
   gap: 4px;
 }
 
+.field-row {
+  display: flex;
+  gap: 8px;
+}
+
+.compact-field {
+  flex: 1;
+  min-width: 0;
+}
+
 .inline-input,
 .box-input,
 .block-input,
@@ -132,7 +142,7 @@ p {
   padding: 5px 6px;
 }
 
-.left {
+.content > .left {
   border-right: 1px solid #000;
 }
 
@@ -174,29 +184,78 @@ p {
 }
 
 .receipt-box {
+  display: grid;
+  grid-template-columns: 32mm 1fr;
   border: 1px dashed #000;
-  padding: 5px 6px;
   margin-top: 4px;
   width: 100%;
-  max-width: 78mm;
+  max-width: 68mm;
+  font-size: 8px;
 }
 
-/* SIGN LINE */
-.sign-line {
+.receipt-cell {
+  display: flex;
+  align-items: center;
+  min-height: 12px;
+  padding: 2px 4px;
+  border-right: 1px dashed #000;
+  border-bottom: 1px dashed #000;
+  min-width: 0;
+}
+
+.receipt-label {
+  font-weight: bold;
+}
+
+.receipt-box .receipt-cell:nth-child(2n) {
+  border-right: none;
+}
+
+.receipt-box .receipt-cell:nth-last-child(-n + 2) {
+  border-bottom: none;
+}
+
+.receipt-box .inline-input {
+  font-size: 8px;
+}
+
+/* SIGNATORY */
+.signatory-input {
   width: 74mm;
-  border-bottom: 1px solid #000;
-  margin: 8px 0 5px;
+  display: block;
+  border: none;
+  margin: 6px auto 0;
+  padding: 0 0 2px;
+  background: transparent;
+  font: inherit;
+  color: #000;
+  outline: none;
+  text-align: center;
+}
+
+.signatory-lineone {
+  margin-top: 8px;
+}
+
+.signatory-linetwo {
+  border-top: 1px solid #000;
+  padding-top: 3px;
+  margin-top: 4px;
 }
 
 /* FOOTER */
 .footer {
   display: flex;
-  flex-direction: column;
-  gap: 2px;
+  gap: 8px;
   text-align: center;
   border-top: 1px solid #000;
   padding-top: 4px;
   font-size: 9px;
+}
+
+.footer .footer-input {
+  flex: 1;
+  min-width: 0;
 }
 
 /* PRINT STYLE */
