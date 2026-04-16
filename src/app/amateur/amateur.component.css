@@ -4,14 +4,14 @@
   flex-direction: column;
   width: 190mm;
   height: 128mm;
-  margin: 12px auto;
-  padding: 6mm 7mm;
+  margin: 20px auto;
+  padding: 6mm 1mm;
   border: 2px solid #000;
   font-family: Arial, sans-serif;
   font-size: 11px;
   line-height: 1.2;
   background: #fff;
-  overflow: hidden;
+ 
 }
 
 p {
@@ -113,6 +113,7 @@ p {
 
 .logo img {
   width: 15mm;
+  margin-left: 70px;
 }
 
 .header-text {
@@ -165,7 +166,7 @@ p {
 .left, .right {
   box-sizing: border-box;
   width: 50%;
-  padding: 5px 6px;
+  padding: 5px 4px;
 }
 
 .content > .left {
@@ -174,17 +175,30 @@ p {
 
 /* EQUIPMENT */
 .equipment {
-  margin-top: 6px;
+  margin-top: 3px;
+  display: flex;
+  align-items: flex-start;
+  gap: 3px;
+}
+
+.equipment-label {
+  flex: 0 0 40mm;
+  margin: 0;
 }
 
 .equip-box {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.equip-item {
+  display: flex;
   align-items: center;
-  gap: 8px;
-  border: 1px dashed #000;
+  min-height: 15px;
   padding: 5px 6px;
-  margin-top: 3px;
+  border: 1px dashed #000;
 }
 
 /* SIGNATURE */
@@ -329,7 +343,7 @@ p {
     width: 190mm;
     height: 128mm;
     margin: 0 auto;
-    padding: 6mm 7mm;
+    padding: 6mm 1mm;
     border: 2px solid #000;
     page-break-after: avoid;
     break-after: avoid;

@@ -47,11 +47,17 @@
       </div>
 
       <div class="equipment">
-        <p><strong>AUTHORIZED EQUIPMENT:</strong></p>
+        <p class="equipment-label"><strong>AUTHORIZED EQUIPMENT:</strong></p>
         <div class="equip-box">
-          <input type="text" [(ngModel)]="formData.equipmentOne" name="equipmentOne" class="box-input" placeholder="Equipment 1">
-          <input type="text" [(ngModel)]="formData.equipmentTwo" name="equipmentTwo" class="box-input" placeholder="Equipment 2">
-          <input type="text" [(ngModel)]="formData.equipmentThree" name="equipmentThree" class="box-input" placeholder="Equipment 3">
+          <div class="equip-item">
+            <input type="text" [(ngModel)]="formData.equipmentOne" name="equipmentOne" class="box-input" placeholder="Equipment 1">
+          </div>
+          <div class="equip-item">
+            <input type="text" [(ngModel)]="formData.equipmentTwo" name="equipmentTwo" class="box-input" placeholder="Equipment 2">
+          </div>
+          <div class="equip-item">
+            <input type="text" [(ngModel)]="formData.equipmentThree" name="equipmentThree" class="box-input" placeholder="Equipment 3">
+          </div>
         </div>
       </div>
     </div>

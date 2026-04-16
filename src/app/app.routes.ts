@@ -22,5 +22,5 @@ export const routes: Routes = [
   { path: 'fphn', component: FphnComponent },
   { path: 'sphn', component: SphnComponent },
   { path: 'tphn', component: TphnComponent },
-  { path: 'frtg', component: FRTGComponent }
+  { path: 'frtg', component: FRTGComponent },
 ];
